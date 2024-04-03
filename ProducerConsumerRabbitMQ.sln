@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Produc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCRmq_Core", "PCRmq_Core\PCRmq_Core.csproj", "{070D0D0F-8A90-47F4-A7CC-BBBB6845F163}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{77F2F652-3D8E-4FAE-8359-0F625ABED6BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{070D0D0F-8A90-47F4-A7CC-BBBB6845F163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{070D0D0F-8A90-47F4-A7CC-BBBB6845F163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{070D0D0F-8A90-47F4-A7CC-BBBB6845F163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F2F652-3D8E-4FAE-8359-0F625ABED6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F2F652-3D8E-4FAE-8359-0F625ABED6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F2F652-3D8E-4FAE-8359-0F625ABED6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F2F652-3D8E-4FAE-8359-0F625ABED6BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

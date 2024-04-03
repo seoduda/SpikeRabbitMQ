@@ -1,4 +1,6 @@
-﻿using PCRmq_Core.Entities.Solucx;
+﻿using PCRmq_Core.Entities.Icanhazdadjoke;
+using PCRmq_Core.Entities.Solucx;
+using PCRmq_Core.Service.Icanhazdadjoke;
 using RabbitMQ.Client;
 using System.Text;
 using System.Text.Json;
@@ -23,27 +25,16 @@ namespace Producer
                 Console.WriteLine("Sent {0} ", message);
             }
 
-            Console.WriteLine("Press anu key to close ");
+            Console.WriteLine("Press any key to close ");
             Console.ReadLine();
         }
 
         private static string GetPayload()
         {
-            Customer customer = new Customer
-            {
-                id = "41",
-                client_id = "24944697830",
-                name = "EDUARDO TEIXEIRA FURTADO",
-                email = "eduardo.furtado@gmail.com",
-                phone = "11976745086",
-                phone2 = "",
-                cpf = "24944697830",
-                gender = null,
-                opt_out = false,
-                CreationDate = DateTime.Now
-            };
 
-            return JsonSerializer.Serialize(customer);
+            DadJoke joke = JokeService.GetRandomJokeAsync().Result;
+
+            return JsonSerializer.Serialize(joke);
 
         }
     }
